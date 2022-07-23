@@ -11,11 +11,9 @@ Kinetic theory introduced a mesoscopic scale into this picture, in between the p
 
 ## Streaming
 
-<figure class="half" style="display:flex">
-    <img style="width:300px" src="before_streaming.png">
-    <img style="width:300px" src="after_streaming.png">
-    <figcaption> The sterming step </figcaption>
-</figure>
+<img style="width:300px;" src="before_streaming.png"/>
+<img style="width:300px;" src="after_streaming.png"/>
+
 
 ## Collision
 
