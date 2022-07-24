@@ -45,9 +45,27 @@ The streaming step is just translating the distributions in their respective dir
 
 In the colission step the distributions are corrected to incorporate the local interactions through colissions, given by,
 
-$$  $$
+$$ \Delta f_{i} \left( \boldsymbol{r}, t \right) = \frac{ f_{i} \left( \boldsymbol{r}, t \right) - f_{i}^{eq} \left( \boldsymbol{r}, t \right) }{\tau} .$$
+
+$\tau$, the relaxation time (analogous to the time scale of colissions in kinetic theory), is a simulation parameter, and the equilibrium distribution,
+
+$$ f_{i}^{eq} \left( \boldsymbol{r}, t \right) = w_{i} \rho \left( 1 + \left[ 3 \frac{\boldsymbol{e_{i}} \cdot \boldsymbol{u}}{c} + \frac{9}{2} \frac{ \left( \boldsymbol{e_{i}} \cdot \boldsymbol{u} \right)^{2}}{c^{2}} - \frac{3}{2} \frac{|\boldsymbol{u}|^{2}}{c^{2}} \right] \right) .$$
+
+The weights, $w_{i}$, are $0$ for $i = 0$, $\frac{1}{9}$ for $i = 1, 2, 3, 4,$ and $\frac{1}{36}$ for $i = 5, 6, 7, 8.$ 
+
+## Reynold's Number
+
+The simulation parameters control the Reynold's number, $Re$, through the kinematic viscosity,
+
+$$ \nu = \frac{2 \tau -1}{6} \frac{\left( \Delta x \right)^{2}}{\Delta t}, $$
+ 
+$Re = \frac{uL}{\nu}.$
+
+Please not that the simulation will fail to remain incompressible as $Re$ increases. Also, it can become unstable for some values of $\tau$ and the choices of grid spacings.
 
 ## Example simulation
+
+This is an example simulation of the Lid-Driven cavity, with the boundary conditions $\boldsymbol{u} \left( y = L  \right) = u_{0}$ and reflecting boundary conditions on the other three boundaries of a square of length $L$. Zou-He (see [On pressure and velocity flow boundary conditions for the lattice Boltzmann BGK model](https://arxiv.org/abs/comp-gas/9508001)) technique is used to enforece the top boundary condition. Reflective boundary conditions are easily employed by reflecting the $f_{i}$ s appropriately on the boundaries during the streaming step.
 
 <center>
   <figure style="display:block margin: 0 auto 0.55em;">
