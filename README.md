@@ -8,7 +8,7 @@ A classical system of interacting particles can be descrived at different levels
 
 Kinetic theory introduced a mesoscopic scale into this picture, in between the previous two scales, where some new physics can be found. The Boltzmann equation provides a statistical description for out of equilibrium systems, given by,
 
-$$ \frac{\partial f}{\partial t} + \frac{\boldsymbol{p}}{m} \cdot \nabla f + \boldsymbol{F} \frac{\partial f}{\partial \boldsymbol{p}} = \left( \frac{\partial f}{\partial t} \right)_{coll}, $$
+$$ \frac{\partial f}{\partial t} + \frac{\boldsymbol{p}}{m} \cdot \nabla f + \boldsymbol{F} \cdot \frac{\partial f}{\partial \boldsymbol{p}} = \left( \frac{\partial f}{\partial t} \right)_{coll}, $$
 
 where $f$ is the single particle distribution in phase space described by the coordinates $\boldsymbol{r}$ and $\boldsymbol{p}$, $\boldsymbol{F} \left( \boldsymbol{r}, t \right)$ is the force field, and the RHS gives the change of the distribution due to colissions.
 
