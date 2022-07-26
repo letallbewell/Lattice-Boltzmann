@@ -32,13 +32,8 @@ The algorithm only involves array movements and arithmetic unlike other numerica
 The streaming step is just translating the distributions in their respective directions.
 <center>
 
-<div style="display:inline-block;">
-  <img style="width:200px;float:left;" src="before_streaming.png"/>
-  <img style="width:200px;float:left;" src="after_streaming.png"/>
-</div> 
-
-  <b>Figure 1.</b> The streaming step
-</center>
+<img src='streaming_step.gif' alt=''  width="300px" />
+<center><b> Figure 1. </b> Streaming step </center>
 
 
 ### Collision
