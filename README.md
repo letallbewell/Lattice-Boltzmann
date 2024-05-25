@@ -65,7 +65,7 @@ This is an example simulation of the Lid-Driven cavity, with the boundary condit
 
 <center>
   <figure style="display:block margin: 0 auto 0.55em;">
-      <img style="width:500px" src="Lid-driven cavityFlow 1950.75.gif">
+      <img style="width:500px" src="Lid-driven cavity/Flow 1950.75.gif">
       <alt="Lid-driven cavityFlow">
   </figure>
 </center>
