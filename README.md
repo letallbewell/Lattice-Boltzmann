@@ -8,7 +8,7 @@ A classical system of interacting particles can be described at different levels
 
 The kinetic theory introduced a mesoscopic scale into this picture, in between the previous two scales, where we can find some new physics. The Boltzmann equation provides a statistical description for out-of-equilibrium systems, given by,
 
-$$ \frac{\partial f}{\partial t} + \frac{\boldsymbol{p}}{m} \cdot \nabla f + \boldsymbol{F} \cdot \frac{\partial f}{\partial \boldsymbol{p}} = \left( \frac{\partial f}{\partial t} \right)_{coll}, $$
+$$\frac{\partial f}{\partial t} + \frac{\boldsymbol{p}}{m} \cdot \nabla f + \boldsymbol{F} \cdot \frac{\partial f}{\partial \boldsymbol{p}} = \left( \frac{\partial f}{\partial t} \right)_{coll},$$
 
 where $f$ is the single particle distribution in phase space described by the coordinates $\boldsymbol{r}$ and $\boldsymbol{p}$, $\boldsymbol{F} \left( \boldsymbol{r}, t \right)$ is the force field. The RHS gives the change of the distribution due to collisions.
 
@@ -20,8 +20,8 @@ We use the D2Q9 discretization in 2 dimensions, where there $9$ directions (incl
 
 The density and the velocity field can be recovered as moments of this $9$ dimensional distribution as,
 
-$$ \rho \left( \boldsymbol{r}, t \right) =  \sum_{i = 0}^{8} f_{i} \left( \boldsymbol{r}, t \right) \text{, and,}$$
-$$ \boldsymbol{u} \left( \boldsymbol{r}, t \right) = \frac{c}{\rho} \sum_{i = 0}^{8} \boldsymbol{e}_{i} f_{i} \left( \boldsymbol{r}, t \right), $$
+$$\rho \left( \boldsymbol{r}, t \right) =  \sum_{i = 0}^{8} f_{i} \left( \boldsymbol{r}, t \right) \text{, and,}$$
+$$\boldsymbol{u} \left( \boldsymbol{r}, t \right) = \frac{c}{\rho} \sum_{i = 0}^{8} \boldsymbol{e}_{i} f_{i} \left( \boldsymbol{r}, t \right),$$
 
 where $\boldsymbol{e}_{i}$ is the direction associated with the $i\text{-th}$ distribution and $c = \frac{\Delta x}{\Delta t}$ is determined from the space and time discretizations.
 
@@ -40,11 +40,11 @@ The streaming step is just translating the distributions in their respective dir
 
 In the collision step, the distributions are corrected to incorporate the local interactions through collisions, given by,
 
-$$ \Delta f_{i} \left( \boldsymbol{r}, t \right) = \frac{ f_{i} \left( \boldsymbol{r}, t \right) - f_{i}^{eq} \left( \boldsymbol{r}, t \right) }{\tau} .$$
+$$\Delta f_{i} \left( \boldsymbol{r}, t \right) = \frac{ f_{i} \left( \boldsymbol{r}, t \right) - f_{i}^{eq} \left( \boldsymbol{r}, t \right) }{\tau} .$$
 
 $\tau$, the relaxation time (analogous to the time scale of collisions in kinetic theory), is a simulation parameter, and the equilibrium distribution,
 
-$$ f_{i}^{eq} \left( \boldsymbol{r}, t \right) = w_{i} \rho \left( 1 + \left[ 3 \frac{\boldsymbol{e_{i}} \cdot \boldsymbol{u}}{c} + \frac{9}{2} \frac{ \left( \boldsymbol{e_{i}} \cdot \boldsymbol{u} \right)^{2}}{c^{2}} - \frac{3}{2} \frac{|\boldsymbol{u}|^{2}}{c^{2}} \right] \right) .$$
+$$f_{i}^{eq} \left( \boldsymbol{r}, t \right) = w_{i} \rho \left( 1 + \left[ 3 \frac{\boldsymbol{e_{i}} \cdot \boldsymbol{u}}{c} + \frac{9}{2} \frac{ \left( \boldsymbol{e_{i}} \cdot \boldsymbol{u} \right)^{2}}{c^{2}} - \frac{3}{2} \frac{|\boldsymbol{u}|^{2}}{c^{2}} \right] \right).$$
 
 The weights, $w_{i}$, are $0$ for $i = 0$, $\frac{1}{9}$ for $i = 1, 2, 3, 4,$ and $\frac{1}{36}$ for $i = 5, 6, 7, 8.$ 
 
@@ -52,7 +52,7 @@ The weights, $w_{i}$, are $0$ for $i = 0$, $\frac{1}{9}$ for $i = 1, 2, 3, 4,$ a
 
 The simulation parameters control Reynold's number, $Re$, through the kinematic viscosity,
 
-$$ \nu = \frac{2 \tau -1}{6} \frac{\left( \Delta x \right)^{2}}{\Delta t}, $$
+$$\nu = \frac{2 \tau -1}{6} \frac{\left( \Delta x \right)^{2}}{\Delta t},$$
  
 $Re = \frac{uL}{\nu}.$
 
