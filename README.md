@@ -22,7 +22,7 @@ The density and the velocity field can be recovered as moments of this $9$ dimen
 
 $$\rho \left( \boldsymbol{r}, t \right) =  \sum_{i = 0}^{8} f_{i} \left( \boldsymbol{r}, t \right) \text{, and,}$$
 
-$$\boldsymbol{u} \left( \boldsymbol{r}, t \right)$$
+$$\boldsymbol{u} \left( \boldsymbol{r}, t \right) = \frac{c}{\rho} \sum_{i = 0}^{8}$$
 
 where $\boldsymbol{e}_{i}$ is the direction associated with the $i$-th distribution and $c = \frac{\Delta x}{\Delta t}$ is determined from the space and time discretizations.
 
