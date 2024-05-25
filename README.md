@@ -21,7 +21,7 @@ We use the D2Q9 discretization in 2 dimensions, where there $9$ directions (incl
 The density and the velocity field can be recovered as moments of this $9$ dimensional distribution as,
 
 $$\rho \left( \boldsymbol{r}, t \right) =  \sum_{i = 0}^{8} f_{i} \left( \boldsymbol{r}, t \right) \text{, and,}$$
-$$\boldsymbol{u} \left( \boldsymbol{r}, t \right) = \frac{c}{\rho} \sum_{i = 0}^{8} \boldsymbol{e}_{i} f_{i} \left( \boldsymbol{r}, t \right),$$
+$$\boldsymbol{u} \left( \boldsymbol{r}, t \right) = $$
 
 where $\boldsymbol{e}_{i}$ is the direction associated with the $i\text{-th}$ distribution and $c = \frac{\Delta x}{\Delta t}$ is determined from the space and time discretizations.
 
