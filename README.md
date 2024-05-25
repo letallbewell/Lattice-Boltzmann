@@ -37,7 +37,7 @@ The streaming step is just translating the distributions in their respective dir
 <center><b> Figure 1. </b> Streaming step </center>
 
 
-### Collision
+### 2. Collision
 
 In the collision step, the distributions are corrected to incorporate the local interactions through collisions, given by,
 
